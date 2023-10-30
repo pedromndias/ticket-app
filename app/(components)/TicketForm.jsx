@@ -4,6 +4,10 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const TicketForm = () => {
+
+    const router = useRouter()
+
+
   // State managed form.
 
   const handleChange = (e) => {
@@ -16,17 +20,21 @@ const TicketForm = () => {
     }));
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    const res = await fetch("api/Tickets", {
+    const res = await fetch("/api/Tickets", {
         method: "POST",
         body: JSON.stringify({formData}),
         "content-type": "application/json"
     })
 
+    // Error handling:
     if (!res.ok) {
         throw new Error("Failed to create Ticket.")
     }
+    // If no error, we use the router to refresh the page and push us to the default page:
+    router.refresh()
+    router.push("/")
   };
 
   const startingTicketData = {
