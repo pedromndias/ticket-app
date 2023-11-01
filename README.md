@@ -2,15 +2,15 @@
 
 ## Description
 
-This is a simple ticket-app that allows users to create, update, view and delete tickets.
+This is a simple ticket-app that allows users to create, update, view and delete tickets. 🎟️
 
 ## Backlog Functionalities
 
-In the future I would like to add some authentication so only logged in users can access specific tickets.
+In the future I would like to add some authentication so only logged in users can access specific tickets. 🎫
 
 ## Technologies used
 
-This is my first project using both NextJS and Tailwind! 
+This is my first project using both NextJS and Tailwind! 🧑‍💻
 
 ## Client Structure
 
