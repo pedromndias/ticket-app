@@ -1,3 +1,29 @@
+# Ticket-app
+
+## Description
+
+This is a simple ticket-app that allows users to create, update, view and delete tickets.
+
+## Backlog Functionalities
+
+In the future I would like to add some authentication so only logged in users can access specific tickets.
+
+## Technologies used
+
+This is my first project using both NextJS and Tailwind! 
+
+## Client Structure
+
+- **homepage** :
+ "/" - The user has an overview of all tickets created.
+- **tickets** :
+ "/TicketPage/new" - The user can create a ticket with Title and Description, select a category, priority, progress and status.
+ "/TicketPage/TICKET_ID" - The user can update all the fileds from a specific ticket by its id.
+
+
+
+-----------------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
